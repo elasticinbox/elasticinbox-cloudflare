@@ -1,3 +1,7 @@
+# Wrangler
+wrangler.toml
+.wrangler
+
 # Logs
 logs
 *.log

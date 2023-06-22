@@ -1,0 +1,13 @@
+{
+  "name": "elasticinbox-dao",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "typescript": "^5.0.4",
+    "wrangler": "3.0.1"
+  },
+  "private": true,
+  "dependencies": {
+    "id128": "^1.6.6"
+  }
+}

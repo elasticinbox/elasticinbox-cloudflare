@@ -1,0 +1,20 @@
+## VSCode REST Client https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+### Add message
+POST http://127.0.0.1:8787/domains/yoxla.com/accounts/test/mailbox/messages
+Content-Type: application/octet-stream
+
+< ./resources/01-simple-ascii.eml
+
+### Get all messages
+GET http://127.0.0.1:8787/domains/yoxla.com/accounts/test/mailbox/messages?limit=10
+
+### Get one message
+GET http://127.0.0.1:8787/domains/yoxla.com/accounts/test/mailbox/messages/01H3FCP012A5VB846GGZ5N1CX7
+
+### Get one raw message
+GET http://127.0.0.1:8787/domains/yoxla.com/accounts/test/mailbox/messages/01H3EY6DCA07P2K9KZ59G1EXGB/raw
+
+### Delete a message
+DELETE http://127.0.0.1:8787/domains/yoxla.com/accounts/test/mailbox/messages/01H21RA0EYF7DVTSWBAX6X6YY4
+
