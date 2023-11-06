@@ -17,7 +17,7 @@ export default {
 		messageMetadata.labels.add(ReservedLabel.All).add(ReservedLabel.Inbox);
 
 		try {
-			const mailbox = new Mailbox(message.to.split("@")[1], message.to.split("@")[0]);
+			const mailbox = new Mailbox(message.to.split("@")[0], message.to.split("@")[1]);
 			await DAOFactory.getMessageDAO(DAOFactory.CLOUDFLARE_KV, env).
 				put(mailbox, messageId, messageMetadata, rawEmail);
 		} catch (error) {
